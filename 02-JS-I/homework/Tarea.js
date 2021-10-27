@@ -1,6 +1,19 @@
+class Persona {
+    constructor(nombre, apellido, edad, domicilio){
+        // Crea el constructor:
+      this.Nombre = nombre
+      this.Apellido = apellido
+      this.Edad = edad
+      this.Domicilio = domicilio
+    }
+    
+    detalle(){
+      return {
+        nombre: this.nombre,
+        apellido: this.apellido,
+        edad: this.edad,
+        domicilio: this.domicilio
+      }
+    }
 
-var llave = [1,2,3,4];
-
-for (let i = 0; i <= llave.leng-1; i++) {
-    console.log (llave[i]);
-}
+    let Persona = new Persona ("a", "b", 25, "Colombia");
